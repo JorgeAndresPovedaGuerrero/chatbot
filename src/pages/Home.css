@@ -1,0 +1,120 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    flex-direction: column;
+}
+
+.home-content {
+    text-align: center;
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08), 0 5px 15px rgba(0, 0, 0, 0.06);
+    max-width: 500px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.home-image {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.home-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.home-title {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.home-subtitle {
+    color: #7f8c8d;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.home-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-btn {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.home-btn-primary {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.home-btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+.home-btn-secondary {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home-btn-secondary:hover {
+    background-color: #e0e6ea;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .home-content {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+
+    .home-title {
+        font-size: 28px;
+    }
+
+    .home-subtitle {
+        font-size: 16px;
+    }
+}
+
+.home-footer {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #7f8c8d;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.author-name {
+    color: #3498db;
+}
