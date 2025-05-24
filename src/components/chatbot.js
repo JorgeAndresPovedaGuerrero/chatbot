@@ -75,7 +75,7 @@ const ChatBot = () => {
     return (
         <div className="chat-container">
             <div className="chat-header">
-                <h2>Asistente Virtual</h2>
+                <h2>Chatea con el bot</h2>
             </div>
             <div className="chat-messages">
                 {messages.map((msg, idx) => (
