@@ -1,0 +1,23 @@
+.view-questions-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fefefe;
+    border-radius: 10px;
+}
+
+.questions-list {
+    list-style: none;
+    padding: 0;
+}
+
+.question-card {
+    background-color: #f3f3f3;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.question-card p {
+    margin: 0.5rem 0;
+}

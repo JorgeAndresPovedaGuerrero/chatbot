@@ -32,6 +32,12 @@ const Home = () => {
                         <i className="icon-chat"></i>
                         Iniciar Chat
                     </button>
+                    <button 
+                        className="home-btn home-btn-tertiary" 
+                        onClick={() => navigate("/view")}
+                    >
+                        📚 Ver Preguntas Guardadas
+                    </button>
                 </div>
             </div>  
             <footer className="home-footer">

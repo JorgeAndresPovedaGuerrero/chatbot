@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Chat from "./pages/chat";
 import AddQuestion from "./components/addquestions";
+import ViewQuestions from "./components/ViewQuestions";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/add" element={<AddQuestion />} />
+                <Route path="/view" element={<ViewQuestions />} />
             </Routes>
         </Router>
     );
