@@ -72,6 +72,11 @@ const ChatBot = () => {
         }
     };
 
+    // 🔹 NUEVA función para limpiar historial
+    const handleClearChat = () => {
+        setMessages([]);
+    };
+
     return (
         <div className="chat-container">
             <div className="chat-header">
@@ -94,6 +99,12 @@ const ChatBot = () => {
                     </div>
                 )}
                 <div ref={messagesEndRef} />
+            </div>
+            {/* 🔹 Botón discreto debajo del chat */}
+            <div className="clear-chat-container">
+                <button className="clear-button" onClick={handleClearChat}>
+                    Limpiar historial
+                </button>
             </div>
 
             <div className="chat-input">
