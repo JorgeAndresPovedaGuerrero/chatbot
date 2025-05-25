@@ -9,6 +9,21 @@ const ChatBot = () => {
     const [isLoading, setIsLoading] = useState(false);
     const messagesEndRef = useRef(null);
 
+    const quickReplies = [
+        "¿Como esta el día?",
+        "¿Como estas?!",
+        "¿Qué puedes hacer?",
+        ];
+
+    useEffect(() =>{
+        const mensajeBienvenida = {
+            sender: 'bot',
+            text: '¡Hola! 🖐️ Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?',
+        };
+
+        setMessages( [mensajeBienvenida]);
+    }, []);
+
     useEffect(() => {
         const fetchChats = async () => {
             try {
@@ -95,6 +110,22 @@ const ChatBot = () => {
                 )}
                 <div ref={messagesEndRef} />
             </div>
+            {messages.length === 1 && (  // solo los muestra al inicio
+                <div className="quick-replies">
+                    {quickReplies.map((reply, index) => (
+                        <button
+                            key={index}
+                            className="quick-reply-button"
+                            onClick={() => {
+                                setQuery(reply);
+                                handleChat(reply);
+                            }}
+                        >
+                            {reply}
+                        </button>
+                    ))}
+                </div>
+            )}
 
             <div className="chat-input">
                 <input
